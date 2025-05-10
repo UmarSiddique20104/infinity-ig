@@ -1,0 +1,93 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    screens: {
+      'xs': '200px',
+      'sm': '200px',
+      '3sm':'300px',
+      '4sm':'400px',
+      '5sm':'500px',
+      'xsm': '600px',
+      'xmd': '920px',
+      'md': '768px', 
+      'lg': '1024px',
+      'slg': '1100px',
+      'xlg': '1200px',
+      'xl': '1280px',
+      'xll': '1300px',
+      'xlll': '1400px',
+      '2xl': '1440px',
+      '15s':'1500px'
+    },
+    extend: {
+      transitionDelay: {
+        '0': '0ms',
+        '30': '30ms',
+        '60': '60ms',
+        '90': '90ms',
+        '120': '120ms',
+        '150': '150ms',
+        '180': '180ms',
+        '210': '210ms',
+        '240': '240ms',
+        '270': '270ms',
+        '300':'300ms',
+        '330':'330ms',
+        '360':'360ms',
+        '390':'390ms',
+        '420':'420ms',
+        '450':'450ms',
+        '480':'480ms',
+        '510':'510ms',
+        '540':'540ms',
+      },
+      transitionDuration: {
+        '100': '100ms',
+        '200': '200ms',
+        '300': '300ms',
+        '400': '400ms',
+        '500': '500ms',
+        '600': '600ms',
+        '700': '700ms',
+        '800': '800ms',
+        '900': '900ms',
+        '1000': '1000ms',
+        '1200': '1200ms',
+        '1300': '1300ms',
+        '1400': '1400ms',
+        '1500': '1500ms',
+        '1600': '1600ms',
+        '1700': '1700ms',
+        '1800': '1800ms',
+        '1900': '1900ms',
+        '2000': '2000ms',
+
+      },
+    
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        spaceGrotesk: ["var(--font-space-grotesk)"],
+      },
+      colors: {
+        primary: "red",
+        secondary: "#FFFFFF",
+        tertiary: "#F1F6F5",
+        quaternary: "#02ABD5",
+      }
+    },
+  },
+  plugins: [],
+};
+export default config;
